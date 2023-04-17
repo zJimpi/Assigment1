@@ -10,38 +10,17 @@ public class schTeam {
         int roll=sc.nextInt();
         String team="none";
         sc.close();
-        int s=1,p=2,r=3,e=4;
-        for(s=1;s<=roll;s+=4)
-        {
-            if(s==roll)
-            {
-                team="Sapphire";
-            }
-        }
-        for(p=2;p<=roll;p+=4)
-        {
-            if(p==roll)
-            {
-                team="Pearl";
-            }
-        }
-        for(r=3;r<=roll;r+=4)
-        {
-            if(r==roll)
-            {
-                team="Ruby";
-            }
-        }
-        for(e=4;e<=roll;e+=4)
-        {
-            if(e==roll)
-            {
-                team="Emerald";
-            }
-        }
-        
+        int n= roll % 4;
+        if ( n==0)
+            team="emrald";
+        if ( n==1)
+            team="shapire";
+        if ( n==2)
+            team="pearl";
+        if ( n==3)
+            team="ruby";
+		
         System.out.println("team: "+team);
-        
 
 	}
 
